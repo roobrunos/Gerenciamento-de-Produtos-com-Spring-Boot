@@ -1,0 +1,19 @@
+package com.senai.eng;
+
+import java.util.List;
+
+@RestController
+public class ProdutoController {
+
+    @Autowired
+    private ProdutoService produtoService;
+
+    @GetMap
+    public List<Produto> lista() {
+        return produtoService.listar();
+
+    }
+
+
+
+}

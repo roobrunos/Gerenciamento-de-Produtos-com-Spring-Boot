@@ -1,0 +1,20 @@
+package com.senai.eng;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@Service
+
+public class ProdutoService {
+    List<Produto> produtos = new ArrayList<Produto>();
+
+    public List<Produto> listar() {
+        return produtos;
+    }
+
+    public Produto Adicionar(Produto produto) {
+        this.produtos.add(produto);
+    }
+
+
+}
